@@ -21,7 +21,7 @@ import { featuredProjects } from "@/data/projects";
 import { services } from "@/data/services";
 import { site } from "@/data/site";
 
-const title = "Nexus AI — AI Automation & Web Development Agency in Dubai";
+const title = "Avento AI — AI Automation & Web Development Agency in Dubai";
 const description =
   "We build AI-powered automation, high-performance websites and custom business systems that help modern businesses save time, generate leads and scale.";
 

@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Reveal";
 import { projectFilters, projects } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
-const title = "Our Work — Websites, Stores & AI Automation Projects | Nexus AI";
+const title = "Our Work — Websites, Stores & AI Automation Projects | Avento AI";
 const description =
   "Explore websites, digital platforms and automation solutions we have created for real estate, e-commerce, hospitality and corporate clients.";
 
