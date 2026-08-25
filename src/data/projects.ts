@@ -3,7 +3,7 @@ import ecommerce from "@/assets/project-ecommerce.jpg";
 import aiSupport from "@/assets/project-ai-support.jpg";
 import dashboard from "@/assets/project-dashboard.jpg";
 import restaurant from "@/assets/project-restaurant.jpg";
-import corporate from "@/assets/project-corporate.jpg";
+import dentist from "@/assets/project-dentist.jpg";
 
 export type ProjectCategory =
   | "Web Development"
@@ -98,15 +98,16 @@ export const projects: Project[] = [
     projectURL: "https://example.com",
   },
   {
-    id: "professional-services",
-    title: "Professional Services Website",
+    id: "dental-clinic",
+    title: "Dental Clinic Website",
     category: "Web Development",
-    industry: "Corporate",
-    description: "Premium corporate website developed for a professional services company.",
-    services: ["Website Development", "SEO Setup", "Analytics Integration"],
-    technology: ["Next.js", "WordPress", "GA4"],
-    image: corporate,
-    imageAlt: "Corporate consulting website displayed on a desktop monitor",
+    industry: "Healthcare & Dental",
+    description:
+      "Modern dental clinic website with online appointment booking, treatment pages and patient enquiry automation.",
+    services: ["Website Development", "Appointment Booking", "SEO Setup", "Lead Automation"],
+    technology: ["Next.js", "Booking API", "GA4"],
+    image: dentist,
+    imageAlt: "Dental clinic website with appointment booking shown on a desktop monitor",
     projectURL: "https://example.com",
   },
 ];
