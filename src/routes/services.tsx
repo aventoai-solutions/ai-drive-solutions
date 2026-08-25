@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { WorkflowDiagram } from "@/components/WorkflowDiagram";
 import { serviceDetails } from "@/data/services";
 
-const title = "Services — AI Automation, Web Development & Business Systems | Nexus AI";
+const title = "Services — AI Automation, Web Development & Business Systems | Avento AI";
 const description =
   "AI chatbots, WhatsApp automation, conversion-focused websites, custom CRMs, dashboards and complete digital setup for modern businesses.";
 

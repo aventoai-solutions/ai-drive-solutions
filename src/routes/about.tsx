@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { SocialLinks } from "@/components/SocialLinks";
 import { site } from "@/data/site";
 
-const title = "About Us — Building Smarter Digital Businesses | Nexus AI";
+const title = "About Us — Building Smarter Digital Businesses | Avento AI";
 const description =
   "We are a Dubai-based technology agency helping businesses use AI, software and modern digital solutions to improve how they operate and grow.";
 

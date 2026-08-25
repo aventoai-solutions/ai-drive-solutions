@@ -3,13 +3,14 @@
  * Edit these values to rebrand the entire website.
  */
 export const site = {
-  name: "Nexus AI",
-  legalName: "Nexus AI Solutions",
+  name: "Avento AI",
+  legalName: "Avento AI Solutions",
+
   tagline: "We Build Intelligent Digital Solutions That Help Businesses Grow",
   positioning: "AI Automation · Web Development · Business Systems · Digital Solutions",
   description:
     "From high-performance websites to AI-powered automation and custom business systems, we help companies automate, scale and build better digital experiences.",
-  email: "hello@nexusai.agency",
+  email: "hello@aventoai.agency",
   phone: "+971 4 555 0192",
   phoneHref: "+97145550192",
   whatsappNumber: "97145550192",

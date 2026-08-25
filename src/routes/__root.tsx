@@ -80,15 +80,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nexus AI — Intelligent Digital Solutions for Business Growth" },
+      { title: "Avento AI — Intelligent Digital Solutions for Business Growth" },
       {
         name: "description",
         content:
           "AI automation, web development, business systems and digital solutions for modern businesses.",
       },
-      { name: "author", content: "Nexus AI" },
+      { name: "author", content: "Avento AI" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Nexus AI" },
+      { property: "og:site_name", content: "Avento AI" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -102,7 +102,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
