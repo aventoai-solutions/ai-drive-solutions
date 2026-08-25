@@ -11,7 +11,11 @@ export function Logo({ size = "md" }: { size?: "md" | "lg" }) {
         aria-hidden="true"
         width={40}
         height={40}
-        className={size === "lg" ? "size-11 shrink-0" : "size-9 shrink-0"}
+        className={
+          (size === "lg" ? "size-11" : "size-9") +
+          " shrink-0 object-contain [filter:drop-shadow(0_0_10px_color-mix(in_oklch,var(--color-primary)_55%,transparent))]"
+        }
+
       />
       <span
         className={
