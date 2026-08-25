@@ -32,11 +32,12 @@ function WorkPage() {
 
   return (
     <>
-      <section className="relative overflow-hidden px-5 pb-14 pt-16 sm:px-6 sm:pb-16 sm:pt-24">
+      <section className="relative px-5 pb-14 pt-16 sm:px-6 sm:pb-16 sm:pt-24">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-full -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]"
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[560px] [background:radial-gradient(60%_60%_at_50%_0%,color-mix(in_oklab,var(--primary)_16%,transparent)_0%,transparent_70%)]"
         />
+
         <div className="relative mx-auto max-w-4xl text-center">
           <h1 className="animate-fade-up text-balance text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl">
             Our <span className="gradient-text">Work</span>
