@@ -3,8 +3,9 @@
  * Edit these values to rebrand the entire website.
  */
 export const site = {
-  name: "Nexus AI",
-  legalName: "Nexus AI Solutions",
+  name: "Avento AI",
+  legalName: "Avento AI Solutions",
+
   tagline: "We Build Intelligent Digital Solutions That Help Businesses Grow",
   positioning: "AI Automation · Web Development · Business Systems · Digital Solutions",
   description:
