@@ -1,18 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   BadgeCheck,
+  Briefcase,
+  Building2,
   Eye,
+  GraduationCap,
   Lightbulb,
-  LifeBuoy,
-  LineChart,
   Mail,
   MapPin,
-  MessagesSquare,
   Phone,
-  RefreshCw,
   ShieldCheck,
-  Timer,
+  ShoppingBag,
+  Stethoscope,
   TrendingUp,
+  UtensilsCrossed,
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { Reveal } from "@/components/Reveal";
