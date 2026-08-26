@@ -40,7 +40,7 @@ export const projects: Project[] = [
     technology: ["React", "Next.js", "CRM API"],
     image: realEstate,
     imageAlt: "Luxury real estate website shown on a laptop screen",
-    projectURL: "https://example.com",
+    projectURL: "https://luxury-real-estate-showcase-lemon.vercel.app/",
     featured: true,
   },
   {
