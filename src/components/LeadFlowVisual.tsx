@@ -49,7 +49,7 @@ export function LeadFlowVisual() {
   const enquiry = enquiries[cycle % enquiries.length] ?? enquiries[0]!;
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -inset-8 -z-10 rounded-[3rem] bg-[radial-gradient(60%_60%_at_50%_40%,color-mix(in_oklab,var(--primary)_24%,transparent)_0%,transparent_72%)] blur-2xl"
@@ -133,7 +133,7 @@ export function LeadFlowVisual() {
                 className={cn(
                   "glass flex items-center gap-3 rounded-2xl px-3.5 py-3 transition-all duration-500",
                   active
-                    ? "border-primary/60 shadow-glow sm:translate-x-1"
+                    ? "border-primary/60 shadow-glow"
                     : "border-border opacity-70",
                 )}
               >
@@ -170,7 +170,7 @@ export function LeadFlowVisual() {
         </ol>
       </div>
 
-      <p className="mt-6 text-center text-[11px] uppercase tracking-[0.16em] text-faint">
+      <p className="mt-6 text-balance text-center text-[10px] uppercase tracking-[0.14em] text-faint">
         Social enquiry → AI qualification → CRM → follow-up → sales notified
       </p>
     </div>
