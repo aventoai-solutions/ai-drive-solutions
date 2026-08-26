@@ -58,14 +58,7 @@ export function Footer() {
                     {site.email}
                   </a>
                 </li>
-                <li>
-                  <a
-                    href={`tel:${site.phoneHref}`}
-                    className="transition-colors hover:text-primary-glow"
-                  >
-                    {site.phone}
-                  </a>
-                </li>
+
                 <li>{site.shortLocation}</li>
               </ul>
             </div>
