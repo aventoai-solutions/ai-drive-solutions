@@ -46,7 +46,8 @@ export function ChatWidget() {
     <>
       {open && (
         <div className="fixed inset-x-3 bottom-24 z-50 sm:inset-x-auto sm:right-6 sm:w-[380px]">
-          <div className="glass flex max-h-[70vh] flex-col overflow-hidden rounded-3xl border border-border shadow-card">
+          <div className="glass flex h-[min(70vh,560px)] flex-col overflow-hidden rounded-3xl border border-border shadow-card">
+
             {/* header */}
             <div className="flex items-start justify-between gap-3 border-b border-border bg-foreground/[0.03] px-5 py-4">
               <div className="flex items-center gap-3">
@@ -69,8 +70,9 @@ export function ChatWidget() {
             </div>
 
             {/* messages */}
-            <Conversation className="min-h-[220px] flex-1">
+            <Conversation className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
               <ConversationContent className="gap-4 px-5 py-4">
+
                 {messages.length === 0 && (
                   <div className="space-y-4">
                     <p className="text-sm leading-relaxed text-muted-foreground">
