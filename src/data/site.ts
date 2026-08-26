@@ -43,7 +43,7 @@ export type SocialKey =
 export const socials: { key: SocialKey; label: string; href: string }[] = [
   { key: "instagram", label: "Instagram", href: "https://instagram.com" },
   { key: "facebook", label: "Facebook", href: "https://facebook.com" },
-  { key: "github", label: "GitHub", href: "https://github.com" },
+  { key: "github", label: "GitHub", href: "https://github.com/aventoai-solutions" },
 ];
 
 export const technologies = [
