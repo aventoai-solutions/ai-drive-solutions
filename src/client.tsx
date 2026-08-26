@@ -1,9 +1,9 @@
-import { StrictMode, Suspense } from "react";
+import { startTransition, StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 import { RouterProvider } from "@tanstack/react-router";
 import { hydrateStart } from "@tanstack/react-start/client";
 
-import type { AnyRouter } from "@tanstack/router-core";
+import type { AnyRouter } from "@tanstack/react-router";
 
 let hydrationPromise: Promise<AnyRouter> | undefined;
 let hydratedRouter: AnyRouter | undefined;
@@ -38,11 +38,11 @@ function ClientRouter() {
   return <RouterProvider router={hydratedRouter} />;
 }
 
-hydrateRoot(
-  document,
-  <StrictMode>
-    <Suspense fallback={null}>
+startTransition(() => {
+  hydrateRoot(
+    document,
+    <StrictMode>
       <ClientRouter />
-    </Suspense>
-  </StrictMode>,
-);
+    </StrictMode>,
+  );
+});
