@@ -76,7 +76,7 @@ function WorkPage() {
 
           <div className="grid gap-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
             {visible.map((project, i) => (
-              <Reveal key={project.id} delay={i * 70}>
+              <Reveal key={project.id} delay={i * 70} className="h-full">
                 <ProjectCard project={project} />
               </Reveal>
             ))}

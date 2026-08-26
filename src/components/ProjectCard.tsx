@@ -3,7 +3,7 @@ import type { Project } from "@/data/projects";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="group flex flex-col">
+    <article className="group flex h-full flex-col">
       <div className="relative mb-6 overflow-hidden rounded-3xl border border-border bg-surface transition-colors group-hover:border-primary/40">
         <img
           src={project.image}
@@ -55,7 +55,8 @@ export function ProjectCard({ project }: { project: Project }) {
         href={project.projectURL}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-primary-glow"
+        className="mt-auto inline-flex w-fit items-center gap-2 pt-5 text-sm font-semibold text-primary-glow"
+
       >
         View Project
         <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

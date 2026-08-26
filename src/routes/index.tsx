@@ -233,7 +233,7 @@ function Home() {
           </div>
           <div className="grid gap-10 md:grid-cols-3 md:gap-8">
             {featuredProjects.map((project, i) => (
-              <Reveal key={project.id} delay={i * 100}>
+              <Reveal key={project.id} delay={i * 100} className="h-full">
                 <ProjectCard project={project} />
               </Reveal>
             ))}
