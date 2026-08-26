@@ -30,7 +30,7 @@ export function SocialLinks({ className }: { className?: string }) {
           <li key={key}>
             <a
               href={href}
-              target="_top"
+              target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
               className="flex size-10 items-center justify-center rounded-full border border-border bg-foreground/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary/50 hover:bg-primary/15 hover:text-foreground"
