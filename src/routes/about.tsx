@@ -45,20 +45,47 @@ const values = [
   },
 ];
 
-/** Team roles — add name, image, bio, LinkedIn and email as the team grows. */
-const team: {
-  role: string;
-  name?: string;
-  bio: string;
-  image?: string;
-  linkedin?: string;
-  email?: string;
-}[] = [
-  { role: "Founder", bio: "Sets the strategy and works directly with every client." },
-  { role: "Developer", bio: "Builds the websites, systems and integrations we ship." },
-  { role: "AI Automation Specialist", bio: "Designs the AI workflows behind our automation." },
-  { role: "UI/UX Designer", bio: "Shapes the interfaces and experiences customers use." },
+/** Client-facing commitments shown instead of a team grid. */
+const commitments = [
+  {
+    icon: Timer,
+    title: "Fast delivery",
+    text: "Most websites go live in 2–3 weeks, automation systems in 1–2 weeks.",
+  },
+  {
+    icon: MessagesSquare,
+    title: "Direct communication",
+    text: "You talk to the people building it — WhatsApp updates, no account managers.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Fixed, clear pricing",
+    text: "Scope and price agreed before we start. No surprise invoices later.",
+  },
+  {
+    icon: Repeat2,
+    title: "Free revisions",
+    text: "We keep refining until the design and flows genuinely work for you.",
+  },
+  {
+    icon: LineChart,
+    title: "Built to convert",
+    text: "Every page is engineered around enquiries, bookings and sales — not just looks.",
+  },
+  {
+    icon: LifeBuoy,
+    title: "Support after launch",
+    text: "30 days of free support, plus optional ongoing care and growth plans.",
+  },
 ];
+
+const proof = [
+  { value: "2–3", label: "Weeks to launch" },
+  { value: "30 days", label: "Free post-launch support" },
+  { value: "100%", label: "Fixed-price projects" },
+  { value: "24h", label: "Reply time on requests" },
+];
+
 
 function AboutPage() {
   return (
