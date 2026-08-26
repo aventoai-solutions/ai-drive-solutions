@@ -95,7 +95,7 @@ export const projects: Project[] = [
     technology: ["React", "Maps API", "Reservations"],
     image: restaurant,
     imageAlt: "Restaurant website with menu and reservation screens on a tablet",
-    projectURL: "https://example.com",
+    projectURL: "https://restaurant-website-zeta-rosy.vercel.app/",
   },
   {
     id: "dental-clinic",
