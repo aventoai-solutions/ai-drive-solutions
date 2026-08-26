@@ -32,6 +32,10 @@ export function SocialLinks({ className }: { className?: string }) {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(event) => {
+                event.preventDefault();
+                window.open(href, "_blank", "noopener,noreferrer");
+              }}
               aria-label={label}
               className="flex size-10 items-center justify-center rounded-full border border-border bg-foreground/5 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary/50 hover:bg-primary/15 hover:text-foreground"
             >
