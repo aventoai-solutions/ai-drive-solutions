@@ -82,7 +82,7 @@ export const projects: Project[] = [
     technology: ["React", "Node.js", "PostgreSQL"],
     image: dashboard,
     imageAlt: "Dark admin dashboard with charts and KPI tiles",
-    projectURL: "https://example.com",
+    projectURL: "https://real-showcase.vercel.app/",
   },
   {
     id: "restaurant-website",
