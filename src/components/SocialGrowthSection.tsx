@@ -1,7 +1,7 @@
-import { BarChart3, Check, Instagram, MessageCircle, Sparkles, Users } from "lucide-react";
+import { BarChart3, Check, Instagram, MessageCircle, Users } from "lucide-react";
+import { LeadFlowVisual } from "./LeadFlowVisual";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
-import phones from "@/assets/social-media-phones.jpg";
 import uiux from "@/assets/work-uiux.jpg";
 import automation from "@/assets/work-automation.jpg";
 
