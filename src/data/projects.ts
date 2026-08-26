@@ -68,7 +68,7 @@ export const projects: Project[] = [
     technology: ["OpenAI", "Python", "WhatsApp API"],
     image: aiSupport,
     imageAlt: "AI customer support chat interface with glowing accents",
-    projectURL: "https://example.com",
+    projectURL: "https://realsupport-ai.vercel.app/",
     featured: true,
   },
   {
