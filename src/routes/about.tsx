@@ -9,7 +9,7 @@ import {
   MapPin,
   MessagesSquare,
   Phone,
-  Repeat2,
+  RefreshCw,
   ShieldCheck,
   Timer,
   TrendingUp,
@@ -77,7 +77,7 @@ const commitments = [
     text: "Scope and price agreed before we start. No surprise invoices later.",
   },
   {
-    icon: Repeat2,
+    icon: RefreshCw,
     title: "Free revisions",
     text: "We keep refining until the design and flows genuinely work for you.",
   },
