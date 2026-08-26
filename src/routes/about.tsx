@@ -1,18 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   BadgeCheck,
+  Briefcase,
+  Building2,
   Eye,
+  GraduationCap,
   Lightbulb,
-  LifeBuoy,
-  LineChart,
   Mail,
   MapPin,
-  MessagesSquare,
   Phone,
-  RefreshCw,
   ShieldCheck,
-  Timer,
+  ShoppingBag,
+  Stethoscope,
   TrendingUp,
+  UtensilsCrossed,
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { Reveal } from "@/components/Reveal";
@@ -59,46 +60,23 @@ const values = [
   },
 ];
 
-/** Client-facing commitments shown instead of a team grid. */
-const commitments = [
-  {
-    icon: Timer,
-    title: "Fast delivery",
-    text: "Most websites go live in 2–3 weeks, automation systems in 1–2 weeks.",
-  },
-  {
-    icon: MessagesSquare,
-    title: "Direct communication",
-    text: "You talk to the people building it — WhatsApp updates, no account managers.",
-  },
-  {
-    icon: BadgeCheck,
-    title: "Fixed, clear pricing",
-    text: "Scope and price agreed before we start. No surprise invoices later.",
-  },
-  {
-    icon: RefreshCw,
-    title: "Free revisions",
-    text: "We keep refining until the design and flows genuinely work for you.",
-  },
-  {
-    icon: LineChart,
-    title: "Built to convert",
-    text: "Every page is engineered around enquiries, bookings and sales — not just looks.",
-  },
-  {
-    icon: LifeBuoy,
-    title: "Support after launch",
-    text: "30 days of free support, plus optional ongoing care and growth plans.",
-  },
+/** Free audit offer — what the client receives. */
+const auditItems = [
+  "Speed, mobile and SEO health check of your current website",
+  "Where enquiries are being lost in your current flow",
+  "2–3 automations that would save your team the most hours",
+  "A simple roadmap with priority, effort and expected impact",
 ];
 
-const proof = [
-  { value: "2–3", label: "Weeks to launch" },
-  { value: "30 days", label: "Free post-launch support" },
-  { value: "100%", label: "Fixed-price projects" },
-  { value: "24h", label: "Reply time on requests" },
+const industries = [
+  { icon: Building2, name: "Real Estate" },
+  { icon: Stethoscope, name: "Clinics & Dental" },
+  { icon: UtensilsCrossed, name: "Restaurants & Cafés" },
+  { icon: ShoppingBag, name: "E-commerce & Retail" },
+  { icon: Briefcase, name: "Professional Services" },
+  { icon: GraduationCap, name: "Education & Coaching" },
 ];
+
 
 
 function AboutPage() {
@@ -153,39 +131,64 @@ function AboutPage() {
       </section>
 
       <section className="border-y border-border bg-foreground/[0.02] px-5 py-20 sm:px-6 sm:py-28">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            eyebrow="Why work with us"
-            title="What you get when you hire Avento AI"
-            description="No agency runaround. Clear pricing, fast delivery and systems built to bring you real enquiries — with support long after launch."
-          />
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {commitments.map((item, i) => (
-              <Reveal key={item.title} delay={i * 70}>
-                <div className="glass h-full rounded-3xl p-7 transition-all hover:-translate-y-1 hover:border-primary/40">
-                  <span className="mb-5 flex size-11 items-center justify-center rounded-2xl bg-primary/10 text-primary-glow">
-                    <item.icon className="size-5" aria-hidden="true" />
-                  </span>
-                  <h3 className="text-base font-bold text-foreground">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <Reveal>
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow">
+              Free growth audit
+            </p>
+            <h2 className="text-balance text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+              Get a free audit of your website and lead flow
+            </h2>
+            <p className="mt-5 text-pretty text-base leading-relaxed text-muted-foreground">
+              Before you spend anything, we review what you already have and show you exactly where
+              customers drop off and which parts of your business can be automated. No obligation, no
+              sales pressure.
+            </p>
 
-          <Reveal delay={120}>
-            <dl className="mt-14 grid grid-cols-2 gap-8 border-t border-border pt-10 lg:grid-cols-4">
-              {proof.map(({ value, label }) => (
-                <div key={label}>
-                  <dt className="text-3xl font-extrabold text-foreground sm:text-4xl">{value}</dt>
-                  <dd className="mt-2 text-[11px] uppercase tracking-[0.16em] text-faint">
-                    {label}
-                  </dd>
-                </div>
+            <ul className="mt-8 space-y-3">
+              {auditItems.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-foreground">
+                  <BadgeCheck className="mt-0.5 size-4 shrink-0 text-primary-glow" aria-hidden="true" />
+                  <span className="min-w-0 leading-relaxed">{item}</span>
+                </li>
               ))}
-            </dl>
+            </ul>
+
+            <a
+              href="#contact"
+              className="mt-9 inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-primary-foreground shadow-glow transition-transform hover:scale-105"
+            >
+              Request my free audit
+            </a>
+            <p className="mt-3 text-xs text-faint">Delivered within 48 hours — usually the same day.</p>
+          </Reveal>
+
+          <Reveal delay={100}>
+            <div className="glass rounded-3xl p-7 sm:p-9">
+              <h3 className="text-lg font-bold text-foreground">Industries we work with</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                We already understand how these businesses win customers, so we start with proven
+                flows instead of guessing.
+              </p>
+              <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+                {industries.map(({ icon: Icon, name }) => (
+                  <li
+                    key={name}
+                    className="flex items-center gap-3 rounded-2xl border border-border/70 bg-foreground/[0.03] px-4 py-3 text-sm font-semibold text-foreground"
+                  >
+                    <Icon className="size-4 shrink-0 text-primary-glow" aria-hidden="true" />
+                    <span className="min-w-0">{name}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-7 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
+                Not on the list? We have built systems for niche businesses too — tell us what you do
+                and we will map it out.
+              </p>
+            </div>
           </Reveal>
         </div>
+
       </section>
 
 
