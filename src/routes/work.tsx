@@ -3,6 +3,8 @@ import { useMemo, useState } from "react";
 import { CtaSection } from "@/components/CtaSection";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Reveal } from "@/components/Reveal";
+import { SocialGrowthSection } from "@/components/SocialGrowthSection";
+
 import { projectFilters, projects } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
@@ -90,7 +92,10 @@ function WorkPage() {
         </div>
       </section>
 
+      <SocialGrowthSection />
+
       <CtaSection
+
         title="Want Results Like These?"
         text="Tell us what you are building and we will show you exactly how we would approach it."
         primaryLabel="Start Your Project"
