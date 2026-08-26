@@ -108,7 +108,7 @@ export const projects: Project[] = [
     technology: ["Next.js", "Booking API", "GA4"],
     image: dentist,
     imageAlt: "Dental clinic website with appointment booking shown on a desktop monitor",
-    projectURL: "https://example.com",
+    projectURL: "https://smile-book-pro.vercel.app/",
   },
 ];
 
