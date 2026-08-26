@@ -116,27 +116,9 @@ export function SocialGrowthSection() {
           </Reveal>
 
           <Reveal delay={100} className="order-1 lg:order-2">
-            <div className="relative">
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute -inset-6 -z-10 rounded-[3rem] bg-[radial-gradient(60%_60%_at_50%_40%,color-mix(in_oklab,var(--primary)_28%,transparent)_0%,transparent_70%)] blur-2xl"
-              />
-              <img
-                src={phones}
-                alt="Two phones showing a social media analytics dashboard and a leads inbox"
-                loading="lazy"
-                width={1024}
-                height={1280}
-                className="w-full rounded-[2rem] border border-border object-cover shadow-card"
-              />
-              <div className="glass absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl px-4 py-3 sm:left-8">
-                <Sparkles className="size-4 shrink-0 text-primary-glow" aria-hidden="true" />
-                <p className="text-xs font-semibold text-foreground">
-                  AI-assisted replies to every DM
-                </p>
-              </div>
-            </div>
+            <LeadFlowVisual />
           </Reveal>
+
         </div>
       </section>
 
