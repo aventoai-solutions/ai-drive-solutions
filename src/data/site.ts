@@ -42,11 +42,7 @@ export type SocialKey =
 
 export const socials: { key: SocialKey; label: string; href: string }[] = [
   { key: "instagram", label: "Instagram", href: "https://instagram.com" },
-  { key: "linkedin", label: "LinkedIn", href: "https://linkedin.com" },
   { key: "facebook", label: "Facebook", href: "https://facebook.com" },
-  { key: "tiktok", label: "TikTok", href: "https://tiktok.com" },
-  { key: "whatsapp", label: "WhatsApp", href: whatsappLink },
-  { key: "x", label: "X", href: "https://x.com" },
   { key: "github", label: "GitHub", href: "https://github.com" },
 ];
 
