@@ -155,49 +155,39 @@ function AboutPage() {
       <section className="border-y border-border bg-foreground/[0.02] px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
-            eyebrow="Our team"
-            title="The people behind the work"
-            description="A small, senior team — strategy, engineering, AI and design working on your project directly."
+            eyebrow="Why work with us"
+            title="What you get when you hire Avento AI"
+            description="No agency runaround. Clear pricing, fast delivery and systems built to bring you real enquiries — with support long after launch."
           />
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {team.map((member, i) => (
-              <Reveal key={member.role} delay={i * 80}>
-                <div className="group h-full rounded-3xl border border-border bg-surface p-7 transition-all hover:-translate-y-1 hover:border-primary/40">
-                  <div className="mb-6 flex aspect-square w-full items-center justify-center rounded-2xl border border-border bg-gradient-to-br from-primary/15 to-violet/15">
-                    {member.image ? (
-                      <img
-                        src={member.image}
-                        alt={member.name ?? member.role}
-                        loading="lazy"
-                        className="size-full rounded-2xl object-cover"
-                      />
-                    ) : (
-                      <User className="size-10 text-primary-glow/70" aria-hidden="true" />
-                    )}
-                  </div>
-                  <h3 className="text-base font-bold text-foreground">
-                    {member.name ?? member.role}
-                  </h3>
-                  {member.name && (
-                    <p className="mt-1 text-xs uppercase tracking-[0.15em] text-primary-glow">
-                      {member.role}
-                    </p>
-                  )}
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
-                  <div className="mt-5 flex gap-4 text-xs font-semibold text-primary-glow">
-                    {member.linkedin && (
-                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                        LinkedIn
-                      </a>
-                    )}
-                    {member.email && <a href={`mailto:${member.email}`}>Email</a>}
-                  </div>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {commitments.map((item, i) => (
+              <Reveal key={item.title} delay={i * 70}>
+                <div className="glass h-full rounded-3xl p-7 transition-all hover:-translate-y-1 hover:border-primary/40">
+                  <span className="mb-5 flex size-11 items-center justify-center rounded-2xl bg-primary/10 text-primary-glow">
+                    <item.icon className="size-5" aria-hidden="true" />
+                  </span>
+                  <h3 className="text-base font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
                 </div>
               </Reveal>
             ))}
           </div>
+
+          <Reveal delay={120}>
+            <dl className="mt-14 grid grid-cols-2 gap-8 border-t border-border pt-10 lg:grid-cols-4">
+              {proof.map(({ value, label }) => (
+                <div key={label}>
+                  <dt className="text-3xl font-extrabold text-foreground sm:text-4xl">{value}</dt>
+                  <dd className="mt-2 text-[11px] uppercase tracking-[0.16em] text-faint">
+                    {label}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </Reveal>
         </div>
       </section>
+
 
       {/* CONTACT */}
       <section id="contact" className="scroll-mt-24 px-5 py-20 sm:px-6 sm:py-28">
