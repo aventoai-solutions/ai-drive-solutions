@@ -42,7 +42,7 @@ export type SocialKey =
 
 export const socials: { key: SocialKey; label: string; href: string }[] = [
   { key: "instagram", label: "Instagram", href: "https://www.instagram.com/avento.ai_agency/" },
-  { key: "facebook", label: "Facebook", href: "https://facebook.com" },
+  { key: "facebook", label: "Facebook", href: "https://www.facebook.com/profile.php?id=61593683226327&sk=directory_contact_info" },
   { key: "github", label: "GitHub", href: "https://github.com/aventoai-solutions" },
 ];
 
