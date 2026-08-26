@@ -133,7 +133,9 @@ export function ChatWidget() {
                   ref={textareaRef}
                   placeholder="Ask about our services..."
                   disabled={isBusy}
+                  className="max-h-24 min-h-10"
                 />
+
                 <PromptInputFooter className="justify-end">
                   <PromptInputSubmit status={status} disabled={isBusy} />
                 </PromptInputFooter>
