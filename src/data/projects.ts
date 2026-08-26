@@ -54,7 +54,7 @@ export const projects: Project[] = [
     technology: ["Shopify", "Stripe", "Liquid"],
     image: ecommerce,
     imageAlt: "Minimalist dark e-commerce store interface with product grid",
-    projectURL: "https://example.com",
+    projectURL: "https://fashion-ecommerce-store-eight.vercel.app/",
     featured: true,
   },
   {
