@@ -243,25 +243,68 @@ function Home() {
 
       {/* AUTOMATION SHOWCASE */}
       <section className="px-5 py-20 sm:px-6 sm:py-28">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-7xl">
           <SectionHeading
             align="center"
             eyebrow="AI automation"
             title="Turn Manual Work Into Automated Systems"
-            description="Our automation solutions connect your website, CRM, WhatsApp, email and business tools into intelligent workflows."
+            description="We connect your website, CRM, WhatsApp, email and business tools into one intelligent workflow — so every enquiry is answered, qualified and followed up without anyone lifting a finger."
           />
-          <div className="mt-14">
+
+          <div className="mt-14 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+            <Reveal className="group relative">
+              <div
+                aria-hidden="true"
+                className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-primary to-violet opacity-20 blur transition duration-1000 group-hover:opacity-40"
+              />
+              <img
+                src={automationVisual}
+                alt="AI automation workflow connecting website leads, CRM and WhatsApp follow-up"
+                loading="lazy"
+                width={1200}
+                height={900}
+                className="relative w-full rounded-3xl border border-border object-cover shadow-card"
+              />
+            </Reveal>
+
+            <div>
+              <h3 className="text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                Your business runs while you sleep
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                Most businesses lose deals in the gap between an enquiry arriving and someone
+                replying. We close that gap with automation built around your exact sales process —
+                no generic templates, no tools you have to babysit.
+              </p>
+              <ul className="mt-8 space-y-5">
+                {automationBenefits.map((b) => (
+                  <li key={b.title} className="flex gap-4">
+                    <span className="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/12 text-primary-glow">
+                      <b.icon className="size-4" aria-hidden="true" />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="text-sm font-bold text-foreground">{b.title}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{b.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/services"
+                hash="ai-automation"
+                className="mt-9 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                See how automation works <Rocket className="size-4" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-16">
+            <p className="mb-8 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow">
+              Inside the workflow
+            </p>
             <WorkflowDiagram />
           </div>
-          <Reveal className="mt-10 text-center">
-            <Link
-              to="/services"
-              hash="ai-automation"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-primary-glow"
-            >
-              See how automation works <Rocket className="size-4" />
-            </Link>
-          </Reveal>
         </div>
       </section>
 
