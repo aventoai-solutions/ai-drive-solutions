@@ -1,15 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
+  Clock4,
   Gauge,
   LifeBuoy,
+  Plug,
   Rocket,
   Settings2,
   Smartphone,
   Sparkles,
+  TrendingUp,
   Wand2,
 } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
+import automationVisual from "@/assets/services-automation.jpg";
 import { CtaSection } from "@/components/CtaSection";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Reveal } from "@/components/Reveal";
@@ -20,6 +24,24 @@ import { WorkflowDiagram } from "@/components/WorkflowDiagram";
 import { featuredProjects } from "@/data/projects";
 import { services } from "@/data/services";
 import { site } from "@/data/site";
+
+const automationBenefits = [
+  {
+    icon: Clock4,
+    title: "Instant response, every time",
+    text: "Leads get an intelligent reply in seconds — day, night, weekend or public holiday.",
+  },
+  {
+    icon: Plug,
+    title: "Connected to your existing tools",
+    text: "Website forms, WhatsApp, Instagram, email, CRM and sheets all talk to each other.",
+  },
+  {
+    icon: TrendingUp,
+    title: "More booked calls, less admin",
+    text: "Qualification, data entry and follow-up run automatically so your team only sells.",
+  },
+];
 
 const title = "Avento AI — AI Automation & Web Development Agency in Dubai";
 const description =
