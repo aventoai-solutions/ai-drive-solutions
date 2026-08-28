@@ -43,9 +43,9 @@ const automationBenefits = [
   },
 ];
 
-const title = "Avento AI — AI Automation & Web Development Agency in Dubai";
+const title = "Evento AI | AI Automation & Lead Generation Agency";
 const description =
-  "We build AI-powered automation, high-performance websites and custom business systems that help modern businesses save time, generate leads and scale.";
+  "Evento AI helps businesses grow with AI automation, lead generation, AI chatbots, CRM systems, websites and smart digital solutions.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -54,6 +54,25 @@ export const Route = createFileRoute("/")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:site_name", content: "Evento AI" },
+      { property: "og:url", content: "https://aventoai.agency/" },
+      { property: "og:image", content: "https://aventoai.agency/logo.png" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: "https://aventoai.agency/logo.png" },
+    ],
+    links: [{ rel: "canonical", href: "https://aventoai.agency/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Evento AI",
+          url: "https://aventoai.agency",
+          description,
+        }),
+      },
     ],
   }),
   component: Home,
