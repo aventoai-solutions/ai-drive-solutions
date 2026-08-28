@@ -80,15 +80,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Avento AI — Intelligent Digital Solutions for Business Growth" },
+      { title: "Evento AI | AI Automation & Lead Generation Agency" },
       {
         name: "description",
         content:
-          "AI automation, web development, business systems and digital solutions for modern businesses.",
+          "Evento AI helps businesses grow with AI automation, lead generation, AI chatbots, CRM systems, websites and smart digital solutions.",
       },
-      { name: "author", content: "Avento AI" },
+      { name: "author", content: "Evento AI" },
+      { name: "application-name", content: "Evento AI" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Avento AI" },
+      { property: "og:site_name", content: "Evento AI" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -102,7 +104,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "icon", href: "/favicon.ico", sizes: "any" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/icon-32.png" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: "/icon-192x192.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Evento AI",
+          alternateName: "Evento AI Solutions",
+          url: "https://aventoai.agency",
+          logo: "https://aventoai.agency/logo.png",
+          image: "https://aventoai.agency/logo.png",
+          email: "hello@aventoai.agency",
+          description:
+            "Evento AI helps businesses grow with AI automation, lead generation, AI chatbots, CRM systems, websites and smart digital solutions.",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dubai",
+            addressCountry: "AE",
+          },
+          sameAs: [
+            "https://www.instagram.com/avento.ai_agency/",
+            "https://www.facebook.com/profile.php?id=61593683226327",
+            "https://github.com/aventoai-solutions",
+          ],
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,
