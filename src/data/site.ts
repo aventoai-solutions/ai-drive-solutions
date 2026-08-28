@@ -16,7 +16,7 @@ export const site = {
   whatsappNumber: "97145550192",
   whatsappMessage:
     "Hi, I'm interested in your digital services and would like to discuss a project.",
-  location: "Business Bay, Dubai, United Arab Emirates",
+  location: "Dubai, UAE",
   shortLocation: "Dubai, UAE",
 };
 

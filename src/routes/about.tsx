@@ -8,7 +8,6 @@ import {
   Lightbulb,
   Mail,
   MapPin,
-  Phone,
   ShieldCheck,
   ShoppingBag,
   Stethoscope,
