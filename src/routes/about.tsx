@@ -8,7 +8,6 @@ import {
   Lightbulb,
   Mail,
   MapPin,
-  Phone,
   ShieldCheck,
   ShoppingBag,
   Stethoscope,
@@ -209,16 +208,9 @@ function AboutPage() {
                 <Mail className="size-4 text-primary-glow" aria-hidden="true" />
                 {site.email}
               </a>
-              <a
-                href={`tel:${site.phoneHref}`}
-                className="flex items-center gap-3 text-foreground transition-colors hover:text-primary-glow"
-              >
-                <Phone className="size-4 text-primary-glow" aria-hidden="true" />
-                {site.phone}
-              </a>
               <p className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="size-4 text-primary-glow" aria-hidden="true" />
-                {site.location}
+                Dubai, UAE
               </p>
             </Reveal>
             <Reveal delay={140}>
