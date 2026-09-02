@@ -4,6 +4,7 @@ import aiSupport from "@/assets/project-ai-support.jpg";
 import dashboard from "@/assets/project-dashboard.jpg";
 import restaurant from "@/assets/project-restaurant.jpg";
 import dentist from "@/assets/project-dentist.jpg";
+import garage from "@/assets/project-garage.jpg";
 
 export type ProjectCategory =
   | "Web Development"
@@ -109,6 +110,19 @@ export const projects: Project[] = [
     image: dentist,
     imageAlt: "Dental clinic website with appointment booking shown on a desktop monitor",
     projectURL: "https://smile-book-pro.vercel.app/",
+  },
+  {
+    id: "garage-os",
+    title: "Avento GarageOS",
+    category: "Business Systems",
+    industry: "Automotive / Car Garage",
+    description:
+      "A smart garage management system designed to manage customers, vehicles, service history, jobs, invoices, appointments and inventory in one place. It also includes AI-powered automation for service reminders, appointment follow-ups, customer reactivation and other daily garage operations.",
+    services: ["Garage Management System", "Customer & Vehicle CRM", "Jobs & Invoicing", "Appointments & Inventory", "AI Automation"],
+    technology: ["Next.js", "React", "PostgreSQL", "AI"],
+    image: garage,
+    imageAlt: "Avento GarageOS dashboard showing vehicle service history and appointment management",
+    projectURL: "https://smart-garage-flow.vercel.app",
   },
 ];
 
